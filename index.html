@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap" rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    fontFamily: {
+                        sans: ["Mulish", "sans-serif"],
+                        mono: ["Rokkitt", "monospace"],
+                    },
+                },
+            };
+        </script>
+        <title>Login Page</title>
+    </head>
+    <body>
+        <!-- Global Container -->
+        <div class="flex justify-center items-center min-h-screen bg-rose-100">
+            <!-- Main Wrapper-->
+            <main class="flex flex-col m-4 shadow-2xl bg-white rounded-xl md:flex-row">
+                <!-- Left Side -->
+                <div class="flex flex-col p-5">
+                    <!-- Top Content -->
+                    <h2 class="font-mono text-4xl mb-6 font-bold">Log In</h2>
+                    <p class="max-w-sm text-gray-500 mb-12 font-sans font-thin">Log in to your account to search for room or to rent room.</p>
+                    <input type="text" class="border p-4 outline-cyan-600" placeholder="Enter your email address" />
+
+                    <!-- Middle Content -->
+                    <div class="mt-8 flex flex-col justify-center items-center space-y-7 md:flex-row md:space-y-0 md:space-x-3">
+                        <div class="group text-cyan-700">
+                            <a class="group-hover:text-cyan-600 font-sans font-thin" href=""> Forgot password </a>
+                        </div>
+                        <div
+                            class="bg-cyan-700 w-full flex justify-center items-center space-x-3 p-6 text-white cursor-pointer font-bold rounded-lg transition duration-300 hover:bg-opacity-90 hover:-translate-y-0.5 hover:shadow-lg md:w-1/2"
+                        >
+                            <span>Next</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <line x1="13" y1="18" x2="19" y2="12" />
+                                <line x1="13" y1="6" x2="19" y2="12" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Border -->
+                    <div class="mt-12 border-b border-gray-300"></div>
+
+                    <!-- Bottom Content -->
+                    <div class="text-gray-400 font-thin text-sm font-sans flex flex-col justify-center items-center py-6">or log in with</div>
+                    <div class="flex flex-col justify-center items-center space-y-7 md:flex-row md:space-y-0 md:space-x-3">
+                        <!-- Facebook  -->
+                        <div
+                            class="border border-gray-300 p-2 rounded-lg cursor-pointer flex justify-center items-center space-x-3 w-full transition duration-100 hover:shadow-md hover:-translate-y-0.5"
+                        >
+                            <img class="w-9" src="images/facebook.png" alt="" />
+                            <span>Facebook</span>
+                        </div>
+                        <!-- Google  -->
+                        <div
+                            class="border border-gray-300 p-2 rounded-lg cursor-pointer flex justify-center items-center space-x-3 w-full transition duration-100 hover:shadow-md hover:-translate-y-0.5"
+                        >
+                            <img class="w-9" src="images/google.png" alt="" />
+                            <span>Google</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Right Side -->
+                <div>
+                    <img src="images/house.svg" alt="house" class="border-l border-gray-100 border-l-2 h-full px-5 w-96 hidden md:block" />
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
